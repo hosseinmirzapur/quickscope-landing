@@ -1,36 +1,193 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# QUICKSCOPE AI — Landing Page
 
-## Getting Started
+The official landing page for **QUICKSCOPE AI**, a real-time Solana trading intelligence platform designed for speed, signal clarity, and execution dominance.
 
-First, run the development server:
+This repository powers the **marketing and product front door** hosted at:
+
+👉 https://qsai.fun  
+
+The full application lives separately at:
+
+👉 https://app.qsai.fun
+
+This separation allows independent optimization of conversion, performance, and product velocity.
+
+---
+
+## Purpose
+
+The landing page exists to:
+
+- Establish technical and product credibility instantly
+- Communicate speed and real-time dominance visually
+- Explain core features without overwhelming users
+- Funnel serious users directly into the application
+- Act as a trust and authority layer for QUICKSCOPE AI
+
+This is **not** a generic SaaS landing page.  
+It is designed for **crypto-native, Solana-native traders**.
+
+---
+
+## Core Sections
+
+The landing page is structured as a single, high-impact experience with the following sections:
+
+1. **Hero**  
+   Immediate value proposition with animated backgrounds and direct CTA to launch the app.
+
+2. **Real-Time Speed Advantage**  
+   Visual explanation of Pump.fun monitoring and low-latency token discovery.
+
+3. **Safety & Signals**  
+   RugCheck integration, authority flags, holder distribution, and risk indicators.
+
+4. **TokenSage AI**  
+   AI-powered structured token analysis, alpha scoring, and risk assessment.
+
+5. **Trading Terminal Integrations**  
+   One-click access to GMGN, Photon, Alph, and Nova.
+
+6. **Tier System**  
+   Clear presentation of FREE, PRO, ALPHA, and WHITELISTED access levels.
+
+7. **Architecture & Trust**  
+   Engineering-focused credibility. No fake testimonials.
+
+8. **Final Call To Action**  
+   Minimal, high-conviction transition to the app.
+
+---
+
+## Tech Stack
+
+- **Framework** → Next.js 16.1 (App Router)
+- **Frontend** → React 19.2
+- **Styling** → Tailwind CSS 4
+- **UI Components** → shadcn/ui
+- **Animations** → Framer Motion 12.23
+- **Icons** → Lucide React
+- **Language** → TypeScript (full type safety)
+
+No CMS.  
+No third-party form builders.  
+No marketing bloat.
+
+---
+
+## Project Structure
+
+```
+
+qsai-landing/
+├── app/
+│   ├── (landing)/
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   └── globals.css
+├── components/
+│   └── landing/
+│       ├── Hero.tsx
+│       ├── SpeedSection.tsx
+│       ├── SafetySection.tsx
+│       ├── TokenSageSection.tsx
+│       ├── TiersSection.tsx
+│       ├── ArchitectureSection.tsx
+│       └── Footer.tsx
+├── lib/
+│   └── landing/
+│       └── motion.ts
+├── public/
+│   └── assets/
+└── README.md
+
+````
+
+Component boundaries are intentional.  
+Animations are isolated and reusable.  
+Nothing is accidental.
+
+---
+
+## Development
+
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, pnpm, or bun
+
+### Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+````
+
+### Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+👉 [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The landing page is designed for **Vercel** deployment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Recommended setup:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* `qsai.fun` → this repository
+* `app.qsai.fun` → main application repository
 
-## Deploy on Vercel
+### Deploy Steps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push repository to GitHub
+2. Connect repo to Vercel
+3. Set domain to `qsai.fun`
+4. Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+No environment variables required.
+
+---
+
+## Design Philosophy
+
+* Dark, Solana-native aesthetic
+* Motion used for hierarchy, not decoration
+* Speed is communicated visually
+* Confidence without exaggeration
+* Traders are assumed to be intelligent and impatient
+
+If something feels decorative, it gets removed.
+
+---
+
+## Disclaimer
+
+This landing page is for informational purposes only.
+
+Cryptocurrency trading involves significant risk.
+QUICKSCOPE AI does not provide financial advice.
+Users are fully responsible for their own decisions.
+
+---
+
+## Related Repositories
+
+* **QUICKSCOPE AI App** → [https://app.qsai.fun](https://app.qsai.fun)
+
+---
+
+## License
+
+MIT License
