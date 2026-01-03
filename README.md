@@ -12,7 +12,6 @@ The full application lives separately at:
 
 This separation allows independent optimization of conversion, performance, and product velocity.
 
----
 
 ## Purpose
 
@@ -27,7 +26,6 @@ The landing page exists to:
 This is **not** a generic SaaS landing page.  
 It is designed for **crypto-native, Solana-native traders**.
 
----
 
 ## Core Sections
 
@@ -57,7 +55,6 @@ The landing page is structured as a single, high-impact experience with the foll
 8. **Final Call To Action**  
    Minimal, high-conviction transition to the app.
 
----
 
 ## Tech Stack
 
@@ -73,7 +70,6 @@ No CMS.
 No third-party form builders.  
 No marketing bloat.
 
----
 
 ## Project Structure
 
@@ -107,7 +103,6 @@ Component boundaries are intentional.
 Animations are isolated and reusable.  
 Nothing is accidental.
 
----
 
 ## Development
 
@@ -138,7 +133,6 @@ Open:
 
 👉 [http://localhost:3000](http://localhost:3000)
 
----
 
 ## Deployment
 
@@ -158,7 +152,6 @@ Recommended setup:
 
 No environment variables required.
 
----
 
 ## Design Philosophy
 
@@ -170,7 +163,6 @@ No environment variables required.
 
 If something feels decorative, it gets removed.
 
----
 
 ## Disclaimer
 
@@ -180,13 +172,11 @@ Cryptocurrency trading involves significant risk.
 QUICKSCOPE AI does not provide financial advice.
 Users are fully responsible for their own decisions.
 
----
 
 ## Related Repositories
 
 * **QUICKSCOPE AI App** → [https://app.qsai.fun](https://app.qsai.fun)
 
----
 
 ## License
 
