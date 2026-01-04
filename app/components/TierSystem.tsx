@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 export default function TierSystem() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(containerRef, { once: false, amount: 0.3 });
+  const isInView = useInView(containerRef, { once: false, amount: 0.2 });
 
   const tiers = [
     {

@@ -15,60 +15,12 @@ export default function LandingPage() {
   return (
     <main className="relative min-h-screen overflow-hidden">
       <Hero />
-      <Suspense
-        fallback={
-          <div className="h-96 flex items-center justify-center text-zinc-400">
-            Loading Speed Insights...
-          </div>
-        }
-      >
-        <LiveSpeed />
-      </Suspense>
-      <Suspense
-        fallback={
-          <div className="h-96 flex items-center justify-center text-zinc-400">
-            Loading Safety Protocols...
-          </div>
-        }
-      >
-        <SafetySignals />
-      </Suspense>
-      <Suspense
-        fallback={
-          <div className="h-96 flex items-center justify-center text-zinc-400">
-            Loading AI Analysis...
-          </div>
-        }
-      >
-        <TokenSageAI />
-      </Suspense>
-      <Suspense
-        fallback={
-          <div className="h-96 flex items-center justify-center text-zinc-400">
-            Loading Trading Tools...
-          </div>
-        }
-      >
-        <TradingTerminals />
-      </Suspense>
-      <Suspense
-        fallback={
-          <div className="h-96 flex items-center justify-center text-zinc-400">
-            Loading Access Levels...
-          </div>
-        }
-      >
-        <TierSystem />
-      </Suspense>
-      <Suspense
-        fallback={
-          <div className="h-96 flex items-center justify-center text-zinc-400">
-            Loading Architecture...
-          </div>
-        }
-      >
-        <TrustArchitecture />
-      </Suspense>
+      <LiveSpeed />
+      <SafetySignals />
+      <TokenSageAI />
+      <TradingTerminals />
+      <TierSystem />
+      <TrustArchitecture />
       <FinalCTA />
       <Footer />
     </main>

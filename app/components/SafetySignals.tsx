@@ -13,7 +13,7 @@ import { useRef } from "react";
 
 export default function SafetySignals() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(containerRef, { once: false, amount: 0.3 });
+  const isInView = useInView(containerRef, { once: false, amount: 0.2 });
 
   const signals = [
     {
@@ -62,7 +62,7 @@ export default function SafetySignals() {
   };
 
   return (
-    <section ref={containerRef} className="relative py-16 overflow-hidden">
+    <section ref={containerRef} className="relative py-8 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900 to-black" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
