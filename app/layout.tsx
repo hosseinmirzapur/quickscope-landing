@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist_Mono } from "next/font/google";
-
 // @ts-ignore
 import "./globals.css";
 
@@ -10,36 +9,32 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#000000",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://qsai.fun"),
   title: "QUICKSCOPE AI - Solana Sniper Terminal",
   description:
-    "Snipe before the herd wakes up. Real-time Pump.fun monitoring with AI-powered analysis, rug checks, and instant execution on Solana.",
-  keywords: [
-    "solana sniper",
-    "pump.fun dashboard",
-    "memecoin trading",
-    "solana token scanner",
-    "rugcheck",
-    "AI token analysis",
-    "solana trading bot",
-    "meme coin sniper",
-    "solana real-time monitor",
-  ].join(", "),
-  authors: [{ name: "QUICKSCOPE AI Team" }],
-  viewport: "width=device-width, initial-scale=1",
-  robots: "index, follow",
+    "See launches first. Decide faster. Win before the herd. Real-time Pump.fun monitoring with AI-powered analysis and instant execution.",
+  keywords:
+    "solana, pump.fun, memecoin sniper, trading terminal, rugcheck, AI analysis, token scanner, solana trading",
+  authors: [{ name: "QUICKSCOPE AI" }],
   openGraph: {
-    title: "QUICKSCOPE AI - Dominate Solana Memecoin Launches",
+    title: "QUICKSCOPE AI - Solana Sniper Terminal",
     description:
-      "Real-time monitoring, AI signals, and one-click execution for Pump.fun alphas.",
+      "Real-time Pump.fun monitoring with AI analysis. Trade faster.",
     url: "https://qsai.fun",
     siteName: "QUICKSCOPE AI",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "QUICKSCOPE.AI Solana Sniper Dashboard",
+        alt: "QUICKSCOPE AI - Solana Sniper Terminal",
       },
     ],
     locale: "en_US",
@@ -50,36 +45,28 @@ export const metadata: Metadata = {
     title: "QUICKSCOPE AI - Solana Sniper Terminal",
     description: "See launches first. Decide faster. Win before the herd.",
     images: ["/logo.jpg"],
-    creator: "@quickscope_ai", // Assuming our X handle
+    creator: "@quickscope_ai",
   },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/logo.png",
     apple: "/apple-touch-icon.png",
   },
-  other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      name: "QUICKSCOPE AI",
-      description:
-        "Real-time Solana trading intelligence for Pump.fun launches",
-      applicationCategory: "FinanceApplication",
-      operatingSystem: "Web",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-      },
-    }),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 
 export default function LandingLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
       <body

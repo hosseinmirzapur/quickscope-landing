@@ -74,7 +74,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="/terms"
                   className="text-sm text-zinc-500 hover:text-white transition-colors"
                 >
                   Terms of Service
@@ -82,7 +82,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/privacy"
                   className="text-sm text-zinc-500 hover:text-white transition-colors"
                 >
                   Privacy Policy
@@ -90,7 +90,15 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:support@qsai.fun"
+                  href="/about"
+                  className="text-sm text-zinc-500 hover:text-white transition-colors"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://app.qsai.fun/contact"
                   className="text-sm text-zinc-500 hover:text-white transition-colors"
                 >
                   Contact Support
